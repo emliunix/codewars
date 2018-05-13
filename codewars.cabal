@@ -1,0 +1,30 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 88ca0c95af8d3fbd742d278a183d5855f8d19f7df9e59eb7987e9fe990e58f41
+
+name:           codewars
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/codewars#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    README.md
+
+executable codewars
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  other-modules:
+      Fusc
+      Paths_codewars
+  default-language: Haskell2010
