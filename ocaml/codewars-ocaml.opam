@@ -1,0 +1,18 @@
+opam-version: "1.2"
+maintainer: "emliunix@gmail.com"
+authors: ["emliunix"]
+homepage: "https://github.com/emliunix/codewars/"
+bug-reports: "https://github.com/emliunix/codewars/issues"
+dev-repo: "https://github.com/emliunix/codewars.git"
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+build-test: ["dune" "runtest" "-p" name]
+
+depends: [
+  "dune" {build}
+  "alcotest" {test}
+]
