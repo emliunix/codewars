@@ -17,6 +17,12 @@
 (library
  (name playingWithPassphrases)
  (modules playingWithPassphrases)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name kthElement)
+ (modules kthElement)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
