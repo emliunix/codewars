@@ -29,6 +29,24 @@
 (library
  (name helpYourGranny)
  (modules helpYourGranny)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name caesarCipher2nd)
+ (modules caesarCipher2nd)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name tankTruck)
+ (modules tankTruck)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name theWalker)
+ (modules theWalker)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
