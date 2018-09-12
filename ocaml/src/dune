@@ -23,6 +23,12 @@
 (library
  (name kthElement)
  (modules kthElement)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name helpYourGranny)
+ (modules helpYourGranny)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
