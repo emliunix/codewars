@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 88ca0c95af8d3fbd742d278a183d5855f8d19f7df9e59eb7987e9fe990e58f41
+-- hash: 31c30412dd54669f30a6a9b35b217986982f6263ae9a2fb73f158f4b522118dc
 
 name:           codewars
 version:        0.1.0.0
@@ -25,6 +25,11 @@ executable codewars
   build-depends:
       base >=4.7 && <5
   other-modules:
+      Codewars.G964.Compsqstrings
+      Codewars.G964.Maxrot
+      Codewars.G964.Seven
+      FormatDuration
       Fusc
+      MaxSequence
       Paths_codewars
   default-language: Haskell2010
