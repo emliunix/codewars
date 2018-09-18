@@ -53,6 +53,12 @@
 (library
  (name longestConsecutiveString)
  (modules longestConsecutiveString)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name listSquared)
+ (modules listSquared)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
