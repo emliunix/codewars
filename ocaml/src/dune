@@ -65,6 +65,12 @@
 (library
  (name perimeters)
  (modules perimeters)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name bestTravel)
+ (modules bestTravel)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
 
