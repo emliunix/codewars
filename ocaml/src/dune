@@ -77,7 +77,14 @@
 (library
  (name lcs)
  (modules lcs)
+ ; (inline_tests)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name fiboAkin)
+ (modules fiboAkin)
  (inline_tests)
+ (libraries extlib)
  (preprocess (pps ppx_inline_test)))
 
 (install
