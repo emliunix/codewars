@@ -83,8 +83,14 @@
 (library
  (name fiboAkin)
  (modules fiboAkin)
+ ; (inline_tests)
+ ; (libraries extlib)
+ (preprocess (pps ppx_inline_test)))
+
+(library
+ (name sumFactors)
+ (modules sumFactors)
  (inline_tests)
- (libraries extlib)
  (preprocess (pps ppx_inline_test)))
 
 (install
