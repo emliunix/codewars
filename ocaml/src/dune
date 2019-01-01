@@ -84,7 +84,7 @@
  (name fiboAkin)
  (modules fiboAkin)
  ; (inline_tests)
- ; (libraries extlib)
+ (libraries extlib)
  (preprocess (pps ppx_inline_test)))
 
 (library
